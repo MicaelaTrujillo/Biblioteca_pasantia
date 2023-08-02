@@ -1,11 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
-import CardList from './components/CardList'
+import BookRegister from './components/RegisterModule/BookRegister';
 
 function App() {
   return (
     <div className="App">
-      <CardList/>
+      <BookRegister/>
     </div>
   );
 }
