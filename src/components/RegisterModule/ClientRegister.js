@@ -19,12 +19,12 @@ function ClientRegister() {
                     placeholder={"Ingrese el carnet del cliente"}
                 />
                 <div className="flex items-center justify-between">
-                <SaveButton
-                    onClick={()=>{console.log("se guardó")}}
-                />
-                <CancelButton
-                    href={"#"}
-                />
+                    <SaveButton
+                        onClick={()=>{console.log("se guardó")}}
+                    />
+                    <CancelButton
+                        href={"#"}
+                    />
                 </div>
             </form>
             </div>
