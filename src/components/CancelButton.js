@@ -1,8 +1,7 @@
 function CancelButton({href}) {
     return(
-        <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+        <button className="px-4 py-2 font-bold text-white bg-red-500 rounded hover:bg-red-700 focus:outline-none focus:shadow-outline" type="button">
             <a href={href}>Cancelar</a>
         </button>
     );
 }
-export default CancelButton;
