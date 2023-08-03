@@ -31,20 +31,9 @@ function DropdownAuthors({label,placeholder}) {
         filtrar()
     }, [value])
 
-
-console.log(authorFilter)
     return(
-        <div>
+        <div className="mb-2">
             <div>
-                <div className="flex flex-row">
-                    <label className="text-left block text-gray-700 text-sm font-bold mb-2 pr-3">
-                        Autor/es
-                    </label>
-                    <svg class="h-6 w-6 text-brown-500 "  fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path onClick={() => console.log("anadir")} stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                    </svg>
-                </div>
-                
                 <input value={value} className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline " onChange={onChange} type="text" placeholder="Ingrese nombre del autor"/>
             </div>
 
