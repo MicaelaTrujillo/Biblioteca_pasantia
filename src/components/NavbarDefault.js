@@ -42,11 +42,11 @@ const NavbarDefault = () => {
             <i className="mb-0 text-2xl material-icons">library_books</i> {/* Icono para "Préstamo" */}
             Préstamo
           </button>
-          <button className="flex flex-col items-center px-4 py-2 text-white transition-all rounded hover:bg-yellow-400">
+          <button onClick={()=>(navigate("/Devoluciones"))} className="flex flex-col items-center px-4 py-2 text-white transition-all rounded hover:bg-yellow-400">
             <i className="mb-0 text-2xl material-icons">history</i>
             Devoluciones
           </button>
-          <button className="flex flex-col items-center px-4 py-2 text-white transition-all rounded hover:bg-yellow-400">
+          <button onClick={()=>(navigate("/Login"))} className="flex flex-col items-center px-4 py-2 text-white transition-all rounded hover:bg-yellow-400">
             <i className="mb-0 text-2xl material-icons">exit_to_app</i>
             Salir
           </button>
