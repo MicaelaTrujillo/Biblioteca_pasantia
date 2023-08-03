@@ -5,7 +5,7 @@ function ClientData() {
     const [client,setClient] = useState({nombre_cliente: "Juan Montecinos", telefono_cliente: "65487985", carnet_cliente: "6878441"})
 
     return(
-        <div className="flex flex-col">
+        <div className="flex flex-col mb-5">
             <div className="overflow-x-auto sm:-mx-6 lg:-mx-8">
                 <div className="inline-block min-w-full py-2 sm:px-6 lg:px-8">
                 <div className="overflow-hidden">

@@ -5,3 +5,5 @@ function SaveButton({onClick}) {
         </button>
     );
 }
+
+export default SaveButton;

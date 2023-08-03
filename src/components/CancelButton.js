@@ -5,3 +5,5 @@ function CancelButton({href}) {
         </button>
     );
 }
+
+export default CancelButton;

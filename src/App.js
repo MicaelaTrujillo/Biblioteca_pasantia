@@ -1,11 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
-import BooksList from './components/LoanModule/BooksList';
+import NavbarDefault from './components/NavbarDefault';
 
 const App = () => {
   return (
     <div className="App">
-      <BooksList/>
+      <NavbarDefault/>
     </div>
   );
 };

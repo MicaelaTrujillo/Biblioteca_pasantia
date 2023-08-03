@@ -21,20 +21,11 @@ const SearchBar = () => {
         onMouseLeave={() => setIsHovered(false)}
         onClick={handleSearch}
       >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className={`w-6 h-6 ${isHovered ? 'text-red-600' : ''}`}
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            d="M15 15l-2-2m0 0l-2-2m2 2l2-2m-2 2l2 2m7-7a9 9 0 11-18 0 9 9 0 0118 0z"
-          />
-        </svg>
+        <svg class="h-6 w-6 text-yellow-800"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z"/>
+            <circle cx="10" cy="10" r="7" />  
+            <line x1="21" y1="21" x2="15" y2="15" />
+          </svg>
       </button>
     </div>
   );
