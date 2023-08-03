@@ -1,18 +1,19 @@
 
-import Forms from './components/LoginModule/Forms';
-import NavbarDefault from './components/NavbarDefault';
+import React from 'react';
 
-function App() {
+const App = () => {
   return (
-    <div>
-    <div className="flex w-full h-screen">
-    <div className="flex items-center justify-center w-full ">
-    <Forms/>
-    <NavbarDefault/>
-    </div>
-    </div>
+    <div className="flex items-center p-2 bg-white rounded-md shadow-md">
+      <input
+        type="text"
+        placeholder="Buscar..."
+        className="flex-1 p-2 outline-none"
+      />
+      <button className="px-3 py-2 text-white bg-blue-500 rounded-md">
+        <i className="material-icons">search</i>
+      </button>
     </div>
   );
-}
+};
 
 export default App;
