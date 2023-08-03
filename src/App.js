@@ -1,13 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
-import NavbarDefault from './components/NavbarDefault';
+import ReturnRegister from "./components/ReturnModule/ReturnRegister";
+
 
 const App = () => {
   return (
     <div className="App">
-      <NavbarDefault/>
+      <ReturnRegister/>
     </div>
   );
 };
 
-export default App;
+export default App;
