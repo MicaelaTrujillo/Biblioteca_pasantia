@@ -1,7 +1,25 @@
 
+import { useEffect, useState } from "react";
 import Card from "./Card";
+import ApiService from "../../services/api.service";
 
 function CardList() {
+
+    const [authors,setAuthors] = useState([])
+    const loadAuthors = async () => {
+        const response = await ApiService.getAuthors()
+        if(response.status == 200){
+            setAuthors(response.data)
+            console.log(response.data)
+        }else{
+            console.log("No se reciben los datos")
+        }
+    }
+
+    useEffect(() => {
+        loadAuthors()
+    },[])
+
     var libros = ["libro 1", "libro 2", "libro 3", "libro 4", "libro 5", "libro 6", "libro 5", "libro 6"];
     return(
         <div>
